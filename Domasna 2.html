@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+<style>
+
+  .center-text {
+    text-align: center;
+  }
+
+</style>
+<h1 class="center-text">Order Pizza!</h1>
+  </header>
+
+<h2 class="center-text">Select the pizza size:</h2>
+    <h3 class="center-text"> <input type="checkbox" id="small" name="Small" value="small">
+      <label for="Small">small</label><br></h3>
+    <h3 class="center-text"> <input type="checkbox" id="medium" name="Medium" value="medium">
+      <label for="Medium">medium</label><br></h3>
+    <h3 class="center-text"> <input type="checkbox" id="large" name="Large" value="large">
+      <label for="Large">large</label><br></h3>
+
+  <h2 class="center-text">
+  <form name="form1" id="form1" action="/action_page.php">
+    Crust type: <select name="select a type of crust " id="select a type of crust">
+    <option value="" selected="selected">Deep dish</option>
+    <option value="" selected="selected">Crispy</option>
+    <option value="" selected="selected">Gluten-free</option>
+    <option value="" selected="selected">Stuffed with cheese</option>
+    <option value="" selected="selected">Flatbread</option>
+  </select>
+
+  </form>
+    </h2>
+
+  <h2 class="center-text">Select the filler:</h2>
+  <h3 class="center-text"> <input type="checkbox" id="1" name="1" value="1">
+    <label for="1">Sausages</label><br></h3>
+  <h3 class="center-text"> <input type="checkbox" id="2" name="2" value="2">
+    <label for="2">Pepperoni</label><br></h3>
+  <h3 class="center-text"> <input type="checkbox" id="3" name="3" value="3">
+    <label for="3">Mushrooms</label><br></h3>
+
+  <h2 class="center-text"> <label for="name">Name:</label>
+  <input type="text" id="name" name="Name">
+  <br>
+  </h2>
+
+  <h2 class="center-text"> <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="Phone">
+    <br>
+  </h2>
+
+  <h2 class="center-text">Extra comment/message: </h2>
+  <h2 class="center-text">
+  <form action="/action_page.php">
+    <p><label for="message"></label></p>
+    <textarea id="message" name="message" rows="6" cols="50"></textarea>
+    <br>
+    <input type="submit" value="Place Order">
+  </form>
+  </h2>
+</body>
+
+</html>
