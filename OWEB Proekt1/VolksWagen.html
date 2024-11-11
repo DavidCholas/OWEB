@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    .lokacija1{
+      top:20%;
+    }
+    .slika1lok {
+      position: absolute;
+      top: 68.5%;
+      left: 38.5%;
+    }
+    .slika2lok {
+      position: absolute;
+      top: 68.5%;
+      left: 75%;
+    }
+  </style>
+  <script>
+    function storeData(name, description, link, image) {
+      sessionStorage.setItem('name', name);
+      sessionStorage.setItem('description', description);
+      sessionStorage.setItem('link', link);
+      sessionStorage.setItem('image', image);
+    }
+
+  </script>
+</head>
+<body>
+
+<button class="button1" type="button" onclick="window.location.href='index.html'">
+  <img src="LeftArrow.jpg" alt="blank" style="width: 154px; height: 50px;">
+  <h3>Назад кон почетна</h3>
+</button>
+
+<div style="position: absolute; top: 18.4%; width: 100%; border-bottom: 2px solid black;"></div>
+
+<div class="lokacija1">
+  <img src="VWLogo.jpg" alt="blank" style="width: 200px; height: 200px;">
+</div>
+<br><br><br><br><br><br>
+
+
+<a class="button1" href="podatoci.html" onclick="storeData('VolksWagen Arteon 2024', '2 литри турбочарџ инлајн-4 мотор со 300 коњски сили; трансмисија: 7 брзини DSG(Dual Clutch Transmission);' +
+ 'Тип на погонувани тркала: FWD(Front Wheel Drive) или AWD(All Wheel Drive).' +
+  'За повеќе информации можете да се обратите кон официјалната страна','https://www.volkswagen.co.uk/en/new/arteon.html', 'arteon.jpg')">
+  <img src="arteon.jpg" alt="blank" style="width: 300px; height: 200px;">
+  <h3>VolksWagen Arteon 2024</h3>
+
+</a>
+
+
+<div class="slika1lok">
+  <a class="button1" href="podatoci.html" onclick="storeData('VolksWagen Golf-R 2024', '2 литри турбочарџ инлајн-4 мотор со 315 коњски сили; трансмисија: 7 брзини DSG(Dual Clutch Transmission);'+
+    'Тип на погонувани тркала: AWD(All Wheel Drive).'+
+     'За повеќе информации можете да се обратите кон официјалната страна','https://www.vw.com/en/models/golf-r.html#performance', 'golf.png')">
+    <img src="golf.png" alt="blank" style="width: 300px; height: 200px;">
+    <h3>VolksWagen Golf 2024</h3>
+  </a>
+</div>
+
+<div class="slika2lok">
+  <a class="button1" href="podatoci.html" onclick="storeData('VolksWagen Tiguan 2024', '2 литри турбочарџ инлајн-4 мотор со 184 коњски сили; трансмисија: 8 бризини автоматик; Тип на погонувани тркала: FWD(Front Wheel Drive) или AWD(All Wheel Drive).' +
+   ' За повеќе информации можете да се обратите кон официјалната страна','https://www.vw.com/en/models/tiguan.html#performance', 'tiguan.png')">
+    <img src="tiguan.png" alt="blank" style="width: 300px; height: 200px;">
+    <h3>VolksWagen Tiguan 2024</h3>
+  </a>
+</div>
+
+</body>
+</html>

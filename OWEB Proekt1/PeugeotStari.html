@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    .lokacija1{
+      top:20%;
+    }
+    .slika1lok {
+      position: absolute;
+      top: 68%;
+      left: 38.5%;
+    }
+    .slika2lok {
+      position: absolute;
+      top: 68%;
+      left: 75%;
+    }
+  </style>
+  <script>
+    function storeData(name, description, image) {
+      sessionStorage.setItem('name', name);
+      sessionStorage.setItem('description', description);
+      sessionStorage.setItem('image', image);
+    }
+
+  </script>
+</head>
+  <body>
+
+    <button class="button1" type="button" onclick="window.location.href='index.html'">
+      <img src="LeftArrow.jpg" alt="blank" style="width: 154px; height: 50px;">
+      <h3>Назад кон почетна</h3>
+    </button>
+
+    <div style="position: absolute; top: 18.4%; width: 100%; border-bottom: 2px solid black;"></div>
+
+    <div class="lokacija1">
+      <img src="PeugeotLogo.jpg" alt="blank" style="width: 200px; height: 160px;">
+    </div>
+    <br><br><br><br><br><br>
+
+
+    <a class="button1" href="podatociStari.html" onclick="storeData('Peugeot 308 2008', 'Пежо 308 има 1.6 литарски 16V мотор со 120 коњски сили;'+
+    'Транзмисијата е мануелна со 5 брзини;'+
+    'Интериерот е доста голем, со голем багажник и доста простор за патниците во возилото, исто така има и дигитален брзинометар;'+
+    'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', '3082008.png')">
+      <img src="3082008.png" alt="blank" style="width: 300px; height: 200px;">
+      <h3>Peugeot 308 2008</h3>
+    </a>
+
+    <div class="slika1lok">
+      <a class="button1" href="podatociStari.html" onclick="storeData('Peugeot 301 2012', 'Пежо 301 поседува 1.6 HDi дизел мотор со 92 коњски сили;'+
+      'Транзмисијата е мануелна со 5 брзини;'+
+      'Интериерот е доста голем, со голем багажник и доста простор за патниците во возилото;'+
+      'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', '3012012.png')">
+        <img src="3012012.png" alt="blank" style="width: 250px; height: 145px;">
+        <h3>Peugeot 301 2012</h3>
+      </a>
+    </div>
+
+    <div class="slika2lok">
+      <a class="button1" href="podatociStari.html" onclick="storeData('Peugeot 2008 2013', 'Ова возило има 1.6 литри VTi мотор со 120 коњски сили;'+
+      'Транзмисијата е автоматска со 6 брзини;'+
+      'Инериерот е доста широк за оваа класа на кола, за возачот има многу лесен систем на таш за разни контроли како радио и слично;'+
+      'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', '20082013.png')">
+        <img src="20082013.png" alt="blank" style="width: 300px; height: 150px;">
+        <h3>Peugeot 2008 2013</h3>
+      </a>
+    </div>
+  </body>
+</html>
+

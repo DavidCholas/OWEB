@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+<style>
+  .commentBar{
+    position: absolute;
+    top: 10%;
+    left: 60%
+  }
+
+  button:hover{
+    background-color:cornflowerblue ;
+    color:white;
+  }
+
+  .vozenje {
+    position: absolute;
+    top: 25%;
+    left: 60%;
+  }
+
+  .anketa{
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 60%;
+  }
+
+</style>
+
+</head>
+<body>
+
+
+  <img id="carImage" style="width: 750px; height: 400px;">
+  <h1 id="userData" ></h1>
+  <p id="Data"></p>
+  <a id="link">Дополнителни податоци</a>
+
+  <div class="commentBar" >
+    <input type="text" id="commentInput" placeholder="Write a comment...">
+    <button type="submit" onclick="addComment()">Comment</button>
+    <p id="commentList"></p>
+      <button type="button" onclick="window.location.href='testvozenje.html'">Закажи тест возење</button>
+  </div>
+
+  <div class="vozenje">
+    <p><b>Закажано е тест возенје за:</b></p>
+    <p id="result"></p>
+  </div>
+
+  <div class="anketa">
+    <button type="button" onclick="window.location.href='Anketa.html'">Дали сакате да направите анкета за ревизија на страната?</button>
+  </div>
+
+  <script>
+    document.getElementById("result").innerHTML = localStorage.getItem("first_name") + " "
+            + localStorage.getItem("last_name") + ", Со телефонски број: "
+            + localStorage.getItem("phone")
+            + ", На датум: " + localStorage.getItem("testvozenje");
+
+  </script>
+
+  <script>
+    const name = sessionStorage.getItem('name');
+  const description = sessionStorage.getItem('description');
+  const link = sessionStorage.getItem('link')
+  const image = sessionStorage.getItem('image');
+
+    if (name && description && link && image) {
+      document.getElementById('userData').textContent = `Име на возилото: ${name}` ;
+      document.getElementById('Data').textContent =`Најбитни карактеристики: ${description}`;
+      document.getElementById('link').href = link;
+      document.getElementById('carImage').src = image;
+
+    } else {
+      document.getElementById('userData').textContent = 'No data found.';
+    }
+  </script>
+
+
+<script>
+  function addComment() {
+    var commentText = document.getElementById('commentInput').value;
+    if (commentText.trim() !== "") {
+      var commentList = document.getElementById('commentList');
+      var newComment = document.createElement('p');
+      newComment.textContent = commentText;
+      commentList.appendChild(newComment);
+      document.getElementById('commentInput').value = '';
+      saveComments();
+    }
+  }
+
+  function saveComments() {
+    var comments = [];
+    document.querySelectorAll('#commentList p').forEach(comment => {
+      comments.push(comment.textContent);
+    });
+    localStorage.setItem('comments', JSON.stringify(comments));
+  }
+
+  function loadComments() {
+    var comments = JSON.parse(localStorage.getItem('comments') || '[]');
+    var commentList = document.getElementById('commentList');
+    comments.forEach(commentText => {
+      var newComment = document.createElement('p');
+      newComment.textContent = commentText;
+      commentList.appendChild(newComment);
+    });
+  }
+
+  window.onload = loadComments;
+
+</script>
+</body>
+</html>

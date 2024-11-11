@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    .lokacija1{
+      top:20%;
+    }
+    .slika1lok {
+      position: absolute;
+      top: 52%;
+      left: 38.5%;
+    }
+    .slika2lok {
+      position: absolute;
+      top: 52%;
+      left: 75%;
+    }
+    </style>
+  <script>
+    function storeData(name, description,link, image) {
+      sessionStorage.setItem('name', name);
+      sessionStorage.setItem('description', description);
+      sessionStorage.setItem('link', link);
+      sessionStorage.setItem('image', image);
+    }
+
+  </script>
+</head>
+<body>
+
+    <button class="button1" type="button" onclick="window.location.href='index.html'">
+      <img src="LeftArrow.jpg" alt="blank" style="width: 154px; height: 50px;">
+      <h3>Назад кон почетна</h3>
+    </button>
+
+    <div style="position: absolute; top: 18.4%; width: 100%; border-bottom: 2px solid black;"></div>
+
+    <div class="lokacija1">
+      <img src="ChevroletLogo.jpg" alt="blank" style="width: 200px; height: 100px;">
+    </div>
+    <br><br><br><br><br><br>
+
+
+      <a class="button1" href="podatoci.html" onclick="storeData('Chevrolet Camaro 2024', 'Шевролет камаро доаѓа со различни верзии на мотор најбазичниот модел е 1.5 литарски турбочарџ инлајн-4 мотор со 275 коњски сили' +
+       'Транзмисијата е мануелна со 6 брзини или автоматска со 10 брзини;'+
+       'Интериерот овозможува на вочат да му е многу лесно да контролира се во колата преку 8 инчен екран, а покрај тоа колата има доста голем простор за багаж;'+
+       'За повеќе информации може да се обратите кон официјалната страна долу.',
+        'https://www.bowmanchevy.com/2024-chevrolet-camaro/','camaro.jpg')">
+        <img src="camaro.jpg" alt="blank" style="width: 250px; height: 150px;">
+        <h3>Chevrolet Camaro 2024</h3>
+
+      </a>
+
+
+    <div class="slika1lok">
+      <a class="button1" href="podatoci.html" onclick="storeData('Chevrolet Trailblazer 2024', 'Ова возило има 1.2 литарски тубочарџ инлајн 4 мотор  со 137 коњнски сили;'+
+      'Транзмисијата е автоматска со 9 брзини;'+
+      'Итериерот е доста шриок со повеќе од доволно место за4-5 лица и доста мето а багаж;'+
+      'За повеќе информации може да се обратите кон официјалната страна долу.',
+      'https://www.chevrolet.com/suvs/previous-year/trailblazer', 'trailblazer.png')">
+        <img src="trailblazer.png" alt="blank" style="width: 250px; height: 150px;">
+        <h3>Chevrolet Trailblazer 2024</h3>
+      </a>
+    </div>
+
+    <div class="slika2lok">
+      <a class="button1" href="podatoci.html" onclick="storeData('Chevrolet Corvette 2024', 'Ова возило има 6.2 литарски V8 мотор со 490 коњски сили;'+
+       'Транзмисијата е DTC(Dual Clutch Transmission) со 8 брзини;'+
+       'Интериерот се состои од две седишта а самата кола е направена како по спортска кола, со малку багажен простор.'+
+       'За повеќе информации може да се обратите кон официјалната страна долу.',
+       'https://www.chevrolet.com/performance/previous-year/corvette', 'corvette.png')">
+        <img src="corvette.png" alt="blank" style="width: 250px; height: 150px;">
+        <h3>Chevrolet Corvette 2024</h3>
+      </a>
+    </div>
+
+</body>
+</html>

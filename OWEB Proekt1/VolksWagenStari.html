@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    .lokacija1{
+      top:20%;
+    }
+    .slika1lok {
+      position: absolute;
+      top: 67%;
+      left: 38.5%;
+    }
+    .slika2lok {
+      position: absolute;
+      top: 67%;
+      left: 75%;
+    }
+    .commentBar {
+      position: absolute;
+      top: 20%;
+      left: 80%
+    }
+  </style>
+  <script>
+    function storeData(name, description, image) {
+      sessionStorage.setItem('name', name);
+      sessionStorage.setItem('description', description);
+      sessionStorage.setItem('image', image);
+    }
+
+  </script>
+</head>
+  <body>
+
+    <button class="button1" type="button" onclick="window.location.href='index.html'">
+      <img src="LeftArrow.jpg" alt="blank" style="width: 154px; height: 50px;">
+      <h3>Назад кон почетна</h3>
+    </button>
+
+    <div style="position: absolute; top: 18.4%; width: 100%; border-bottom: 2px solid black;"></div>
+
+    <div class="lokacija1">
+      <img src="VWLogo.jpg" alt="blank" style="width: 200px; height: 200px;">
+    </div>
+    <br><br><br><br><br><br>
+
+
+    <a class="button1" href="podatociStari.html" onclick="storeData('VolksWagen Polo 1995', 'Полото поседува 1.5 литарски дизел мотор со околу 50-60 коњски сили;'+
+    'Транзмисијата се состои од 5 брзини (мануелна транзмисија); '+
+    'Дизајнот е hatchback со 3 врати, интериерот е комфортен со нови седишта.'+
+    'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', 'polo.jpg')">
+      <img src="polo.jpg" alt="blank" style="width: 340px; height: 200px;">
+      <h3>VolksWagen Polo 1995</h3>
+    </a>
+
+    <div class="slika1lok">
+      <a class="button1" href="podatociStari.html" onclick="storeData('VolksWagen Golf 1993', 'Голфот поседува 1.4 литарски инлајн-4 мотор (брзинец) со околу 60-70 коњски сили;'+
+      'Трансмијата се сотои од 5 брзини (мануелна транзмисија);'+
+      'Кога станува збор за дизајнот ова возило е малку поширок модел во споредма со другиве возила во тоа време, што значи дека и интериерот на возилото е доста поширок, особено во задните седишта'+
+      'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', 'golf1993.png')">
+        <img src="golf1993.png" alt="blank" style="width: 320px; height: 200px;">
+        <h3>VolksWagen Golf 1993</h3>
+      </a>
+    </div>
+
+    <div class="slika2lok">
+      <a class="button1" href="podatociStari.html" onclick="storeData('VolksWagen Touran 2003', 'Ова возило поседува 1.6 литарски 8V мотор со 105 коњски сили;'+
+      'Транзмисијата е мануелна и се состои од 5 брзини;'+
+      'Интериерот е со 5 седишта,секое седиште може да се поместува, со што може да се носи поголема количина на багаж' +
+      'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', 'touran.png')">
+        <img src="touran.png" alt="blank" style="width: 280px; height: 200px;">
+        <h3>VolksWagen Touran 2003</h3>
+      </a>
+    </div>
+
+  </body>
+</html>

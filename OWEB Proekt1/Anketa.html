@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <style>
+        body,
+        html {
+            background-color: #085b6a;
+            height: 100%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            text-align: center;
+            padding: 30px;
+            border: 2px solid #ccc;
+            background-color: #abf1f1;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="form-container">
+        <h1>Анкета за страната</h1>
+        <form>
+            <label for="first_name">Име:</label><br>
+            <input type="text" id="first_name" name="first_name"><br><br>
+            <label for="last_name">Презиме:</label><br>
+            <input type="text" id="last_name" name="last_name"><br><br>
+            <h2>Како сте задоволни од страната</h2>
+            <input type="checkbox" id="1" name="1" value="1">
+            <label for="1"> Многу Задоволни</label><br>
+            <input type="checkbox" id="2" name="2" value="2">
+            <label for="2">Задоволни</label><br>
+            <input type="checkbox" id="3" name="3" value="3">
+            <label for="3">Неутрално</label><br>
+            <input type="checkbox" id="4" name="4" value="4">
+            <label for="4"> Незадоволни</label><br>
+            <input type="checkbox" id="5" name="5" value="5">
+            <label for="5"> Многу Незадоволни</label><br>
+            <br>
+            <h3>Некој друг коментар за странта: </h3>
+            <br>
+            <textarea id="kom" name="kom" placeholder="Коментар" rows="10" cols="50"></textarea><br><br>
+        </form>
+        <button type="button" onclick="window.location.href='indexPosleNajava.html'">Submit</button><br><br>
+    </div>
+
+</body>
+</html>

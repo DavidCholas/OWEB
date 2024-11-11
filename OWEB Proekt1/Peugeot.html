@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    .lokacija1{
+      top:20%;
+    }
+    .slika1lok {
+      position: absolute;
+      top: 70%;
+      left: 38.5%;
+    }
+    .slika2lok {
+      position: absolute;
+      top: 70%;
+      left: 75%;
+    }
+  </style>
+  <script>
+    function storeData(name, description, link, image) {
+      sessionStorage.setItem('name', name);
+      sessionStorage.setItem('description', description);
+      sessionStorage.setItem('link', link);
+      sessionStorage.setItem('image', image);
+    }
+
+  </script>
+</head>
+<body>
+
+  <button class="button1" type="button" onclick="window.location.href='index.html'">
+    <img src="LeftArrow.jpg" alt="blank" style="width: 154px; height: 50px;">
+    <h3>Назад кон почетна</h3>
+  </button>
+
+  <div style="position: absolute; top: 18.4%; width: 100%; border-bottom: 2px solid black;"></div>
+
+  <div class="lokacija1">
+   <img src="PeugeotLogo.jpg" alt="blank" style="width: 200px; height: 160px;">
+  </div>
+  <br><br><br><br><br><br>
+
+
+  <a class="button1" href="podatoci.html" onclick="storeData('Peugeot 308 2024', 'Ова возило има различни опции за мотор, најбазичниот е 1.2 литарски PureTech мотор со 110 коњски сили;'+
+  'Транзмисијата може да биде мануелна или автоматска со 8 брзини;'+
+  'Во интериерот има компактен волан плус централен екран со разни контроли за возачот;' +
+  'За повеќе информации може да се обратите кон официјалната страна долу.',
+  'https://www.peugeot.com.mk/vehicles/308/', '308.png')">
+    <img src="308.png" alt="blank" style="width: 300px; height: 200px;">
+    <h3>Peugeot 308 2024</h3>
+  </a>
+
+
+  <div class="slika1lok">
+   <a class="button1" href="podatoci.html" onclick="storeData('Peugeot 301 2024', 'Ова возило има различни вида на мотор, каде што најбазичниот модел е 1.2 литарски 4-цилидричен мотор со 82-110 коњски сили;'+
+   'Транзмисијата може да биде мануелна со 5 брзини или автоматска со 6 брзини;'+
+   'Интериерот е доста широк со удобни коќни седишта, лесна конрола на сите системи во колата преку централен екран и доста голем багажен простор;'+
+   'За повеќе информации може да се обратите кон официјалната страна долу.',
+   'https://africa.peugeot.com/en/model-range/peugeot-301/', '301.png')">
+      <img src="301.png" alt="blank" style="width: 300px; height: 145px;">
+      <h3>Peugeot 301 2024</h3>
+    </a>
+  </div>
+
+  <div class="slika2lok">
+    <a class="button1" href="podatoci.html" onclick="storeData('Peugeot 2008 2024', 'Ова возило има различни вида на мотор, а најбазичниот е 1.5 литарски BlueHDi мотор со 100 коњски сили;'+
+    'Транзмисијата е мануелна со 6 брзини или автоматска со 8 брзини;'+
+    'Интериерот се состои од компактен волан, централен екран за разни контроли во возилото, загревање на седишта и така натаму.'+
+    'За повеќе информации може да се обратите кон официјалната страна долу.',
+    'https://www.peugeot.com.mk/vehicles/new_2008/', '2008.png')">
+      <img src="2008.png" alt="blank" style="width: 300px; height: 150px;">
+      <h3>Peugeot 2008 2024</h3>
+    </a>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    .lokacija1{
+      top:20%;
+    }
+    .slika1lok {
+      position: absolute;
+      top: 51%;
+      left: 38.5%;
+    }
+    .slika2lok {
+      position: absolute;
+      top: 51%;
+      left: 75%;
+    }
+  </style>
+  <script>
+    function storeData(name, description, image) {
+      sessionStorage.setItem('name', name);
+      sessionStorage.setItem('description', description);
+      sessionStorage.setItem('image', image);
+    }
+
+  </script>
+</head>
+  <body>
+
+    <button class="button1" type="button" onclick="window.location.href='index.html'">
+      <img src="LeftArrow.jpg" alt="blank" style="width: 154px; height: 50px;">
+      <h3>Назад кон почетна</h3>
+    </button>
+
+    <div style="position: absolute; top: 18.4%; width: 100%; border-bottom: 2px solid black;"></div>
+
+    <div class="lokacija1">
+      <img src="ChevroletLogo.jpg" alt="blank" style="width: 200px; height: 100px;">
+    </div>
+    <br><br><br><br><br><br>
+
+
+    <a class="button1" href="podatociStari.html" onclick="storeData('Chevrolet Aveo 2002', 'Авеото поседува 1.4 литарски инлајн-4 мотор со 70 коњски сили;'+
+    'Транзмисијата е мануелна со 5 брзини;'+
+    'Дизајнот е по коцкаст за разлика од повеќето коли во тоа време, се со цел да се овозможи погоем простор во интериерот.'+
+    'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', 'Aveo.jpg')">
+      <img src="Aveo.jpg" alt="blank" style="width: 250px; height: 150px;">
+      <h3>Chevrolet Aveo 2002</h3>
+    </a>
+
+    <div class="slika1lok">
+      <a class="button1" href="podatociStari.html" onclick="storeData('Chevrolet Matiz 2004', 'Матизот содржи 1 литарски инлајн-3 мотор во себе со 65 коњски сили;'+
+      'Транзмисијата е мануелна со 5 брзини:'+
+      'Ова возило е помало возило и е најдобро за помлади возачи - почетници. Иако е помала кола сепак е максимизиран итериерот, моќат комотно да се возат 4 лица;'+
+      'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', 'Matiz.png')">
+      <img src="Matiz.png" alt="blank" style="width: 250px; height: 150px;">
+      <h3>Chevrolet Matiz 2004</h3>
+    </a>
+    </div>
+
+    <div class="slika2lok">
+      <a class="button1" href="podatociStari.html" onclick="storeData('Chevrolet Captiva 2008', 'Оваа кола поседува 3.2 литарски V6 мотор што може да достигне 227 коњски сили;'+
+       'Транзмисијата е автоматска со 6 брзини;'+
+       'Дизајнот е направен се со ццел да соджи 5 лица во два реда а воедно и да има доста простор за поголеми количини на багаж.'+
+       'За повеќе информации во ворска со возилото можете да закажете тест воезенје каде сопственикот на возилото ќе ви ги иодвори вашите дополнителни прашања', 'Captiva.png')">
+      <img src="Captiva.png" alt="blank" style="width: 250px; height: 150px;">
+      <h3>Chevrolet Captiva 2008</h3>
+      </a>
+    </div>
+
+  </body>
+</html>
